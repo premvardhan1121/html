@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Quiz</title>
+</head>
+<body>
+  <h2>Quiz: What is the capital of India?</h2>
+  <button onclick="checkAnswer('Delhi')">Delhi</button>
+  <button onclick="checkAnswer('Mumbai')">Mumbai</button>
+  <button onclick="checkAnswer('Kolkata')">Kolkata</button>
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer(answer) {
+      const correctAnswer = "Delhi";
+      const result = document.getElementById("result");
+      if (answer === correctAnswer) {
+        result.textContent = "✅ Correct!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ Wrong, try again!";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
