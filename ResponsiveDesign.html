@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      background: lightblue;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    /* Tablet view */
+    @media (max-width: 768px) {
+      .container {
+        background: lightgreen;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Mobile view */
+    @media (max-width: 480px) {
+      .container {
+        background: lightcoral;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Design Example</h1>
+    <p>Resize the screen to see color & font-size change!</p>
+  </div>
+</body>
+</html>
